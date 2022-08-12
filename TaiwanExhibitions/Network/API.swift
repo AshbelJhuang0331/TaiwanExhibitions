@@ -27,11 +27,6 @@ class API: NSObject {
     }
     
     func fetchAllExhibitions(succeed: @escaping (Data) -> Void, fail: @escaping (Error) -> Void) {
-//        self.urlComponents.query = "method=doFindTypeJ&category=6"
-//        self.urlComponents.queryItems = [
-//            URLQueryItem(name: "method", value: "doFindTypeJ"),
-//            URLQueryItem(name: "category", value: "6")
-//        ]
         self.urlComponents.queryItems = [
             "method": "doFindTypeJ",
             "category": "6"
